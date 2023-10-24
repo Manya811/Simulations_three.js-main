@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Simulation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.shikharedusoft.com/Simphy" version="2.1" title="DC motor" author="Mahesh Kurmi" access="1" price="3.0" categories="3d,magnetics,instruments" speed="1.0">
+  <System>
+    <JavaVersion>1.8.0_121</JavaVersion>
+    <JavaVendor>Oracle Corporation</JavaVendor>
+    <OperatingSystem>Mac OS X 10.14.5</OperatingSystem>
+    <Architecture>x86_64</Architecture>
+    <NumberOfCpus>4</NumberOfCpus>
+    <Locale>en_US</Locale>
+  </System>
+  <Description>
+    <![CDATA[<html>
+  <head>
+    
+  </head>
+  <body>
+    <span charset="utf-8" align="left" style="letter-spacing: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none"><font color="rgb(34, 34, 34)" face="Open Sans, Arial, Helvetica, sans-serif" size="14px">The 
+    above simulation shows the principle of a simple DC motor.</font></span><font color="rgb(34, 34, 34)" face="Open Sans, Arial, Helvetica, sans-serif" size="14px"><br align="left" style="letter-spacing: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(255, 255, 255)"><span align="left" style="letter-spacing: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none">When 
+    current is applied to the coil, the direction of the current flowing in 
+    the left and right parts of the coil is opposite to each other. Therefore, 
+    the direction of the force which the coil receives is reversed and the 
+    coil rotates.</span><br align="left" style="letter-spacing: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(255, 255, 255)"><span align="left" style="letter-spacing: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none">At 
+    this time, the direction of the current is changed by the commutator every 
+    half turn of the coil, so the coil continues to rotate in the same 
+    direction.</span></font>
+  </body>
+</html>]]>
+  </Description>
+  <Camera>
+    <Scale>#54.56449614121902</Scale>
+    <Translation x="-1.2899102707851093" y="0.2948886309337224" />
+  </Camera>
+  <Textures>
+    <Texture  name="homopolar_motor_battery.png" width="437" height="591" wrap="ClampToEdge" filter="Linear" />
+  </Textures>
+  <Animations>
+    <Animation name ="homopolar_motor_battery.png" texture="homopolar_motor_battery.png" params="1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.10000000149011612,0.0,0.0,0.0,0.0">
+      <TextureRegion  u1="0.0" v1="0.0" u2="0.99999994" v2="1.0" />
+    </Animation>
+  </Animations>
+  <Sounds>
+  </Sounds>
+  <Fonts>
+  </Fonts>
+  <Files>
+    <File  name="dc_motor_rotor.obj" filePath="dc_motor_rotor.obj" />
+    <File  name="Battery_AA.obj" filePath="Battery_AA.obj" />
+    <File  name="dc_motor_magnet_n.obj" filePath="dc_motor_magnet_n.obj" />
+    <File  name="dc_motor_magnet_s.obj" filePath="dc_motor_magnet_s.obj" />
+    <File  name="dc_motor_bridge.obj" filePath="dc_motor_bridge.obj" />
+    <File  name="dc_motor_battery.obj" filePath="dc_motor_battery.obj" />
+    <File  name="dc_motor_coil.obj" filePath="dc_motor_coil.obj" />
+  </Files>
+  <Rays>
+  </Rays>
+  <Fields>
+  </Fields>
+  <World>
+    <Name>New Simulation</Name>
+    <Settings>
+      <StepFrequency>60.0</StepFrequency>
+      <MaximumTranslation>2.0</MaximumTranslation>
+      <MaximumRotation>90.0</MaximumRotation>
+      <ContinuousCollisionDetectionMode>ALL</ContinuousCollisionDetectionMode>
+      <AutoSleep>true</AutoSleep>
+      <SleepTime>0.5</SleepTime>
+      <SleepLinearVelocity>0.01</SleepLinearVelocity>
+      <SleepAngularVelocity>2.0</SleepAngularVelocity>
+      <VelocitySolverIterations>10</VelocitySolverIterations>
+      <PositionSolverIterations>10</PositionSolverIterations>
+      <WarmStartDistance>0.01</WarmStartDistance>
+      <RestitutionVelocity>1.0</RestitutionVelocity>
+      <LinearTolerance>0.005</LinearTolerance>
+      <AngularTolerance>2.0</AngularTolerance>
+      <MaximumLinearCorrection>0.2</MaximumLinearCorrection>
+      <MaximumAngularCorrection>8.0</MaximumAngularCorrection>
+      <Baumgarte>0.2</Baumgarte>
+    </Settings>
+    <Preferences>
+      <BackColor r="1.0" g="1.0" b="1.0" a="1.0" />
+      <ForeColor r="0.0" g="0.0" b="0.0" a="1.0" />
+      <drawgrid>false</drawgrid>
+      <gridcolor r="0.87058824" g="0.87058824" b="0.87058824" a="1.0" />
+      <drawruler>false</drawruler>
+      <draworigin>true</draworigin>
+      <drawbodycenter>true</drawbodycenter>
+      <drawbounds>true</drawbounds>
+      <drawvelocities>false</drawvelocities>
+      <drawvalues>false</drawvalues>
+      <randomcolor>true</randomcolor>
+      <randomFillColor r="0.5019608" g="0.92156863" b="0.4" a="1.0" />
+      <randomDrawColor r="0.14901961" g="0.38039216" b="0.101960786" a="1.0" />
+      <fontName>Arial</fontName>
+      <fontSize>15</fontSize>
+      <fontStyle>1</fontStyle>
+      <fontName_gui>Arial</fontName_gui>
+      <fontSize_gui>15</fontSize_gui>
+      <fontStyle_gui>1</fontStyle_gui>
+      <MinDisplayForce>1.0E-4</MinDisplayForce>
+      <MinDisplayVelocity>1.0E-4</MinDisplayVelocity>
+      <ImpulseScale>0.1</ImpulseScale>
+      <VelocityScale>0.2</VelocityScale>
+      <FBDForceNames>Mg,f,N,T,R,kx,E,F,Fps,Fcf,Fcori</FBDForceNames>
+      <FBDForceColors>0.20000000298023224,0.43921568989753723,0.10196078568696976,1.0;0.0,0.4000000059604645,1.0,1.0;0.0,0.4000000059604645,1.0,1.0;0.6000000238418579,0.20000000298023224,0.0,1.0;0.6000000238418579,0.20000000298023224,0.0,1.0;0.6000000238418579,0.3019607961177826,0.4000000059604645,1.0;0.4000000059604645,0.4000000059604645,0.800000011920929,1.0;0.10196078568696976,0.4000000059604645,0.10196078568696976,1.0;0.4000000059604645,0.4000000059604645,0.4000000059604645,1.0;0.4000000059604645,0.4000000059604645,0.6000000238418579,1.0;0.4000000059604645,0.4000000059604645,0.800000011920929,1.0</FBDForceColors>
+      <ThemeColors>437725615,-1198337,1718053300,-913948673,-1666538497,1717987021,758330286,-928513,-6746369,-1145324545,-1,-1,1349538047</ThemeColors>
+      <FBDForceStates>true,true,true,true,true,true,true,true,true,true,true</FBDForceStates>
+      <ForceDisplaySettings>true,true,false,false,false,true</ForceDisplaySettings>
+      <VelocityDisplaySettings>false,true,true,false</VelocityDisplaySettings>
+      <Precision>3</Precision>
+      <drawElectricFieldLinesForCharge>true</drawElectricFieldLinesForCharge>
+      <drawElectricFieldLines>true</drawElectricFieldLines>
+      <drawMagneticFieldLines>true</drawMagneticFieldLines>
+      <ElectricFieldLinesColor r="0.2" g="0.8" b="0.4" a="1.0" />
+      <MagneticFieldLinesColor r="0.2" g="0.8" b="0.4" a="1.0" />
+      <customAxis>false</customAxis>
+      <axisOrigin x="0.0" y="0.0" />
+      <axisAngle>0.0</axisAngle>
+      <trigAxis>true</trigAxis>
+      <axisFlipped>false</axisFlipped>
+      <showAxis>true</showAxis>
+      <allowAxisRotation>false</allowAxisRotation>
+      <allowCameraRotation>false</allowCameraRotation>
+      <allowCameraAtCOMonly>true</allowCameraAtCOMonly>
+      <coeffMixer>0,1</coeffMixer>
+      <gravityRendered>true</gravityRendered>
+      <simulationLocked>false</simulationLocked>
+      <windowWidth>1407</windowWidth>
+      <windowHeight>666</windowHeight>
+    </Preferences>
+    <BroadphaseDetector>DynamicAABBTree</BroadphaseDetector>
+    <NarrowphaseDetector>Gjk</NarrowphaseDetector>
+    <ManifoldSolver>ClippingManifoldSolver</ManifoldSolver>
+    <TimeOfImpactDetector>ConservativeAdvancement</TimeOfImpactDetector>
+    <Gravity x="0.0" y="-9.8" />
+    <gridsize>0.20000000298023224</gridsize>
+    <ConvexBounds>
+      <Shape Id="91b83287-d85c-4dc5-bf8d-892ab3feefb2" xsi:type="Rectangle">
+        <LocalCenter x="0.0" y="0.0" />
+        <Width>200.0</Width>
+        <Height>150.0</Height>
+        <LocalRotation>0.0</LocalRotation>
+        <Ruler>false</Ruler>
+      </Shape>
+      <Translation x="0.0" y="0.0" />
+    </ConvexBounds>
+    <Bodies>
+      <Body Id="3eea4054-bcaa-4fd0-8931-4ee65f33c91e" Name="FixedAnchorBody">
+        <OutlineColor r="0.16862746" g="0.19215687" b="0.15686275" a="1.0" />
+        <FillColor r="0.76862746" g="0.8352941" b="0.5882353" a="1.0" />
+        <Fixtures>
+        </Fixtures>
+        <Transform>
+          <Translation x="0.0" y="0.0" />
+          <Rotation>0.0</Rotation>
+        </Transform>
+        <Mass>
+          <LocalCenter x="0.0" y="0.0" />
+          <Type>INFINITE</Type>
+          <Mass>0.0</Mass>
+          <Inertia>0.0</Inertia>
+          <Explicit>false</Explicit>
+        </Mass>
+        <Velocity x="0.0" y="0.0" />
+        <AngularVelocity>0.0</AngularVelocity>
+        <AccumulatedForce x="0.0" y="0.0" />
+        <AccumulatedTorque>0.0</AccumulatedTorque>
+        <AutoSleep>true</AutoSleep>
+        <Active>true</Active>
+        <Renderable>false</Renderable>
+        <Reflection>0.5</Reflection>
+      </Body>
+    </Bodies>
+    <Joints>
+    </Joints>
+    <ScriptManager>
+      <Script>
+        <![CDATA[var canvas =Widgets.getCanvas("canvas3d");
+
+var scene=Threed.createScene();
+var camera=Threed.createCamera();
+
+camera.setAsPerspective(30, 1, 1, 30);
+camera.setPosition(0, 3,5);
+camera.setTarget(0, 0, 0.3);
+var reverse=false;
+
+var coil;
+var battery;
+var base;
+var vfield;
+var force;
+var magnet;
+
+var root=Threed.createNode();
+scene.setRoot(root);
+scene.debug=false;
+var light=Threed.createLight(Color.WHITE, 1);
+//light.setAsAmbientLight();
+light.setColor(0.8,0.8,0.8);
+///, g, b)
+root.addLight(light);
+root.addChild(light);
+
+var light=Threed.createLight(Color.WHITE, 1);
+
+light.setAsDirectionalLight(new Vector3(-5,0,0), new Vector3(0,0,0));
+root.addLight(light);
+root.addChild(light);
+
+var light=Threed.createLight(Color.WHITE, 1);
+
+light.setAsDirectionalLight(new Vector3(5,0,0), new Vector3(0,0,0));
+root.addLight(light);
+root.addChild(light);
+
+light=Threed.createLight(Color.WHITE, 1);
+light.setAsPointLight(new Vector3(0,0,0));
+camera.addChild(light);
+root.addLight(light);
+
+scene.setCamera(camera);
+
+battery=Threed.createModel(Threed.Meshes.createCylinder(0.105, 0.97, 10, true),null);
+let cap=Threed.createModel(Threed.Meshes.createCylinder(0.02, 0.03, 10, true),null);
+cap.setMaterial(Threed.createMaterial("silver"));
+//cap.setMaterial(Threed.createMaterial("silver").setAsLightMaterial(new Color("white"), 128));
+cap.translate(0, 0.48, 0);
+battery.addChild(cap);
+var mat=Threed.createMaterial("white");
+mat.setTexture("homopolar_motor_battery.png");
+mat.setEmissive(0.0,0.4,0.0);
+battery.setMaterial(mat);
+
+var p=new Path2D();
+p.moveTo(-0.17,-1);
+p.lineTo(-0.1,-1);
+p.lineTo(-0.1,-0.5);
+p.lineTo(-0.4,-0.5);
+p.lineTo(-0.4,0.5);
+p.lineTo(0.4,0.5);
+p.lineTo(0.4,-0.5);
+p.lineTo(0.1,-0.5);
+p.lineTo(0.1,-1.0);
+p.lineTo(0.17,-1.0);
+
+loop=Threed.Curves.newCurveFromPath2D(p, 0.02);
+loop.addMarker(0.28,0.1,1);
+loop.addMarker(0.68,0.1,1);
+let c=Threed.Meshes.createTubeGeomtery(loop, 50, 0.02, 6, true);
+//loop=Threed.Meshes.createTubeGeomtery(loop, 100, 0.01, 5, false);
+loop=Threed.createModel(loop,Threed.createMaterial("copper").setAsPresetMaterial("copper"));//.setAsLightMaterial(new Color(184, 115, 51), 32));
+loop.getModel().addMesh(c);
+
+loop.rotate(-Math.PI/2,0,0);
+
+let NP=Threed.createModel("dc_motor_magnet_n.obj");
+NP.setMaterial(Threed.createMaterial("red"));//.setAsFlatColorMaterial(new Color("red")));
+let SP=Threed.createModel("dc_motor_magnet_n.obj");
+SP.setMaterial(Threed.createMaterial("blue"));//.setAsFlatColorMaterial(new Color("blue")));
+NP.normalize();
+SP.normalize();
+NP.rotate(0, Math.PI,0);
+NP.translate(0.1, 0, -0.5)
+SP.translate(0.1,0,0.069);
+
+var rotor=Threed.createModel("dc_motor_rotor.obj");
+rotor.setMaterial(Threed.createMaterial("gold").setAsPresetMaterial("gold"));//.setAsLightMaterial(new Color("gold"),32));
+rotor.normalize();
+rotor.scale(0.25,0.25,0.25);
+//, sy, sz)
+rotor.translate(0,0,3.9);
+//, y, z)
+root.addChild(rotor);
+
+//root.addChild(Threed.createAxes(1));
+root.addChild(loop);
+root.setMaterial(Threed.createMaterial("gold"));
+root.addChild(NP);
+root.addChild(SP);
+
+var pts=[new Vector3(0,0.15,0),new Vector3(0,0.7,0),new Vector3(0.35,0.7,0),new Vector3(0.35,0.15,0)];
+wire=Threed.Curves.newPolyLineCurve(pts);
+wire.addMarker(0.28,0.07,1);
+wire.addMarker(0.68,0.07,1);
+wire=Threed.createModel(wire,Threed.createMaterial("copper").setAsLineMaterial(new Color(184, 15, 51), 2));
+battery.addChild(wire);
+
+var pts=[new Vector3(0,-0.15,0),new Vector3(0,-0.7,0),new Vector3(0.35,-0.7,0),new Vector3(0.35,-0.15,0)];
+wire=Threed.Curves.newPolyLineCurve(pts);
+wire.addMarker(0.28,0.07,2);
+wire.addMarker(0.68,0.07,2);
+wire=Threed.createModel(wire,Threed.createMaterial("copper").setAsLineMaterial(new Color(184, 15, 51), 2));
+battery.addChild(wire);
+battery.rotate(0,0,Math.PI/2);
+battery.translate(0, -0.35,1.0);
+root.addChild(battery);
+
+let phy=loop.getPhysics();
+phy.setAngularVelocity(new Vector3(0,1,0));
+//magnet.removeAllChildren();
+loop.removeAllChildren();
+vfield=Threed.createNode();
+
+pts=[new Vector3(-0.7,0.20,-0.47),new Vector3(0.0,0.15,-0.47),new Vector3(0.7,0.20,-0.47)];
+var curve=Threed.Curves.newSplineCurve(false, 0.5, 1, pts);
+curve.addMarker(0.15, 0.05, 1);
+curve.addMarker(0.85, 0.05, 1);
+
+curve=Threed.createModel(curve,Threed.createMaterial("white").setAsLineMaterial(new Color(0, 128, 51), 2));
+
+let vf=Threed.createNode();
+for(let i=0;i<6;i++){	
+	curve=curve.clone();
+	curve.translate(0,0,0.15);
+	vf.addChild(curve);
+}
+
+vfield.addChild(vf);
+pts=[new Vector3(-0.7,-0.20,-0.45),new Vector3(0.0,-0.15,-0.45),new Vector3(0.7,-0.2,-0.45)];
+curve=Threed.Curves.newSplineCurve(false, 0.5, 1, pts);
+curve.addMarker(0.15, 0.05, 1);
+curve.addMarker(0.85, 0.05, 1);
+
+curve=Threed.createModel(curve,Threed.createMaterial("white").setAsLineMaterial(new Color(0, 128, 51), 2));
+
+vf=Threed.createNode();
+for(let i=0;i<6;i++){	
+	curve=curve.clone();
+	curve.translate(0,0,0.15);
+	vf.addChild(curve);
+}
+
+vfield.addChild(vf);
+curve=Threed.Curves.newLineCurve(new Vector3(-0.7,0,-0.47), new Vector3(0.7,0,-0.47));
+curve.addMarker(0.15, 0.05, 1);
+curve.addMarker(0.85, 0.05, 1);
+
+curve=Threed.createModel(curve,Threed.createMaterial("white").setAsLineMaterial(new Color(0, 128, 51), 2));
+
+vf=Threed.createNode();
+for(let i=0;i<6;i++){	
+	curve=curve.clone();
+	curve.translate(0,0,0.15);
+	vf.addChild(curve);
+}
+vfield.addChild(vf);
+root.addChild(vfield);
+/*
+let vf2=vfield.clone();
+vf2.rotate(Math.PI,0,0);
+root.addChild(vf2);
+*/
+let f1=Threed.Curves.newLineCurve(new Vector3(0.4,0,0), new Vector3(0.4,0,0.3));
+f1.addMarker(1,0.06,1,"F",null);
+let f2=Threed.Curves.newLineCurve(new Vector3(-0.4,0,0), new Vector3(-0.4,0,-0.3));
+f2.addMarker(1,0.06,1,"F",null);
+
+force=Threed.createNode();
+force.addChild(Threed.createModel(f1,Threed.createMaterial("white").setAsLineMaterial(new Color("red"), 2)));
+//loop.addChild(force);
+//force=Threed.createModel(f2,Threed.createMaterial("white").setAsLineMaterial(new Color("red"), 2));
+force.addChild(Threed.createModel(f2,Threed.createMaterial("white").setAsLineMaterial(new Color("red"), 2)));
+loop.addChild(force);
+canvas.setScene(scene);
+
+updateField();
+
+function updateField(){	
+	let B=-Widgets.getSlider("a").getValue();
+	run();
+	showForces();
+	showField();
+}
+
+function run(){	
+	App.setPaused(!Widgets.getCheckBox("chkRun").isSelected());
+	
+	let phy=loop.getPhysics();
+	let B=-Widgets.getSlider("a").getValue();
+	//if(!Widgets.getCheckBox("chkRun").isSelected())B=0;
+	phy.setAngularVelocity(new Vector3(0,2*B,0));
+	
+}
+
+function showForces(){	
+	let b=Widgets.getCheckBox("chkForces").isSelected();
+	force.setVisible(b);
+	//loop.getChildern()[1].setVisible(b);
+}
+
+function showField(){	
+	let b=Widgets.getCheckBox("chkField").isSelected();
+	vfield.setVisible(b);
+}
+/**
+* Runs when simulation starts, all initialisations should be done in this function
+*/
+function world_onStart(){	
+	Widgets.getCheckBox("chkRun").setSelected(true);
+}
+/**
+* Runs when simulation stops, all clean ups should be done in this function
+*/
+function world_onStop(){	
+	Widgets.getCheckBox("chkRun").setSelected(false);
+}
+
+function reversePolarity(){	
+	let m=Java.type("org.shikhar.simphy.gfx.canvas.scene3d.Actions3D");
+	battery.addAction3d(m.getInstance().rotateBy(0,Math.PI,0,1.0,"sine"));
+	reverse=!reverse;
+	let phy=loop.getPhysics();
+	phy.setAngularVelocity(new Vector3(0,reverse?1:-1,0));
+	force.scale(1, 1, -1);
+    loop.getModel().getCurve(0).removeAllMarkers();
+    loop.getModel().getCurve(0).addMarker(0.28,0.1,reverse?(currCW?1:2):(currCW?2:1));
+    loop.getModel().getCurve(0).addMarker(0.68,0.1,reverse?(currCW?1:2):(currCW?2:1));
+}
+
+var rotnY=0;
+var currCW=false;
+/**
+* Runs whenever simulation is updated [almost 60 times per second],
+* heavy work should be avoided in this function since it may slow down simulation drastically
+* @param time {Number} : current simulation time in seconds
+* @param dt {Number} : time elapsed since last step
+*/
+function world_onUpdate(time,dt){	
+	let y=Math.tan(1.5+loop.rotation.y);
+	if(y<0&&rotnY>0||y<0&&rotnY>0){		
+		currCW=	!currCW;
+		loop.getModel().getCurve(0).removeAllMarkers();
+		loop.getModel().getCurve(0).addMarker(0.28,0.1,reverse?(currCW?1:2):(currCW?2:1));
+		loop.getModel().getCurve(0).addMarker(0.68,0.1,reverse?(currCW?1:2):(currCW?2:1));
+	}
+	rotnY=y;
+}]]>
+      </Script>
+    </ScriptManager>
+    <GuiManager>
+      <GuiXML>
+        <![CDATA[<desktop>
+    <dialog iconifiable="true" resizable="true" text="DC Motor Demo" bottom="6" columns="2" gap="8" height="360" left="6" right="6" scrollable="true" top="6" width="480" rectbounds="98,0,913,565">
+        <bean name="canvas3d" text="Canvas 3D Demo" background="#e0e0e0ff" border="true" height="240" weightx="3" weighty="1" width="240" bean="org.shikhar.simphy.gfx.canvas.Canvas">
+        </bean>
+        <panel columns="1" gap="6" scrollable="true" weightx="1" weighty="1" width="100">
+            <slider name="a" maximum="3.0" minimum="0.1" text="Simulation speed=value" value="0.4" action="updateField()">
+            </slider>
+            <checkbox name="chkField" selected="true" text="Show Field" action="showField()">
+            </checkbox>
+            <checkbox name="chkForces" selected="true" text="show Forces" halign="left" action="showForces()">
+            </checkbox>
+            <checkbox name="chkRun" selected="true" text="Run" action="run()">
+            </checkbox>
+            <button name="Button" text="Reverse Polarity" action="reversePolarity()">
+            </button>
+            <textarea name="textarea" text="An electric motor is a device that converts electrical energy into mechanical energy by utilizing the force received by a conductor through which a current flows in a magnetic field. 
+
+The  simulation shows the principle of a simple DC motor.
+
+When current is applied to the coil, the direction of the current flowing in the left and right parts of the coil is opposite to each other. Therefore, the direction of the force which the coil receives is reversed and the coil rotates. At this time, the direction of the current is changed by the commutator every half turn of the coil, so the coil continues to rotate in the same direction." columns="20" weightx="1" weighty="1" wrap="true" property="drawstyle=44,54,#00ffffff,,n,false,0 : 67,77,#00ffffff,,n,false,0 : 211,220,,,b,false,0 : 226,242,#00ff00ff,,n,false,0 : 542,552,#ff8000ff,,n,false,0 ">
+            </textarea>
+        </panel>
+    </dialog>
+</desktop>
+]]>
+      </GuiXML>
+    </GuiManager>
+  </World>
+</Simulation>
